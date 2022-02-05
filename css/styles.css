@@ -1,7 +1,7 @@
 /* WebStudio: черный=000000 100% , синий=2196F3 100% */
 /* Навигация: черный=212121 100% , синий=2196F3 100% */
 /* Герой: Заголовок текст белый=FFFFFF 100%, фон т.серый=2F303A 100%*/
-/* Герой: Кнопка текст белый=FFFFFF 100%, фон синий=2196F3 100% */
+/* Герой: Кнопка текст белый=FFFFFF 100%, фон синий=2196F3 100%, акцент фон т.синий = 188ce8 */
 /* Преимущества: Заголовок черный=212121 100%, текст серый=757575 100% */
 /* Преимущества + Чем зан: фон св.св.серый=E5E5E5 100% */
 /* Чем занимаемся: Заголовок черный=212121 100% */
@@ -11,6 +11,8 @@
 /* Футер: фон т.серый=2F303A 100%*/
 
 :root {
+    --primary-font-family: Roboto, sans-serif;
+    --secondary-font-family: Raleway, sans-serif;
     --primary-white-color: #ffffff;
     --primary-black-color: #000000;
     --primary-text-color: #757575;
@@ -26,30 +28,32 @@
 body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-family: Roboto, sans-serif;
+    font-family: var(--primary-font-family);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
+}
+a {
+    text-decoration: none;
 }
 
 .page-header {
     font-weight: 500;
-    line-height: 1.17;
+    line-height: 1.14;
     background-color: var(--primary-white-color);
 }
 
 /* Лого */
 .logo {
     color: var(--accent-color);
-    font-family: Raleway, sans-serif;
+    font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    text-decoration: none;
     letter-spacing: 0.03em;
 }
 .logo-studio {
@@ -58,12 +62,11 @@ ul {
 
 /* Навигация меню страницы */
 .menu-nav {
-    text-decoration: none;
 }
 
 .menu-nav .link {
     color: var(--title-text-color);
-    text-decoration: none;
+
     letter-spacing: 0.02em;
 }
 .menu-nav .link:hover,
@@ -77,7 +80,6 @@ ul {
 /* Контакты шапки страницы */
 .page-header .contacts-nav {
     color: var(--primary-text-color);
-    text-decoration: none;
     letter-spacing: 0.02em;
 }
 .page-header .contacts-nav:hover .contacts-nav:focus {
@@ -126,9 +128,17 @@ ul {
 .feature-title {
     color: var(--title-text-color);
     font-weight: 700;
-    line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+.feature-text {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
@@ -152,13 +162,14 @@ ul {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.17;
+    line-height: 1.18;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 .team-position {
     color: var(--primary-text-color);
     font-size: 16px;
-    line-height: 1.17;
+    line-height: 1.18;
     text-align: center;
 }
 
@@ -172,13 +183,11 @@ ul {
 .address {
     color: var(--primary-white-color);
     font-style: normal;
-    text-decoration: none;
     letter-spacing: 0.03em;
 }
 .mail-tel {
     color: var(--primary-white-color);
     font-style: normal;
-    text-decoration: none;
     letter-spacing: 0.03em;
     opacity: 0.6;
 }
@@ -194,8 +203,8 @@ ul {
     color: var(--title-text-color);
     background-color: var(--alt-background-color);
     font-family: inherit;
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
@@ -209,18 +218,18 @@ ul {
 
 .project-title {
     color: var(--title-text-color);
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .project-type {
-    font-size: 16px;
     font-weight: 400;
+    font-size: 16px;
     line-height: 1.87;
 }
 .project-item {
-    background-color: var(--item--background-color);
+    background-color: var(--primary-white-color);
     border: 1px solid var(--item-boder-color);
 }
