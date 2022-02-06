@@ -1,28 +1,17 @@
-/* WebStudio: черный=000000 100% , синий=2196F3 100% */
-/* Навигация: черный=212121 100% , синий=2196F3 100% */
-/* Герой: Заголовок текст белый=FFFFFF 100%, фон т.серый=2F303A 100%*/
-/* Герой: Кнопка текст белый=FFFFFF 100%, фон синий=2196F3 100%, акцент фон т.синий = 188ce8 */
-/* Преимущества: Заголовок черный=212121 100%, текст серый=757575 100% */
-/* Преимущества + Чем зан: фон св.св.серый=E5E5E5 100% */
-/* Чем занимаемся: Заголовок черный=212121 100% */
-/* Наша команда: Заголовок черный=212121 100%, текст серый=757575 100%*/
-/* Наша команда: фон секции св.серый=F5F4FA 100% */
-/* Футер: физ.адрес текст белый=FFFFFF 100%, email+тел=белый=FFFFFF 60% */
-/* Футер: фон т.серый=2F303A 100%*/
-
 :root {
     --primary-font-family: Roboto, sans-serif;
     --secondary-font-family: Raleway, sans-serif;
     --primary-white-color: #ffffff;
     --primary-black-color: #000000;
     --primary-text-color: #757575;
+    --title-text-color: #212121;
     --accent-color: #2196f3;
     --accent-button-color: #188ce8;
     --background-color: #e5e5e5;
     --alt-background-color: #f5f4fa;
     --hero-footer-background-color: #2f303a;
-    --item-boder-color: #eeeeee;
-    --title-text-color: #212121;
+    --item-border-color: #eeeeee;
+    --header-border-color: #ececec;
 }
 
 body {
@@ -32,9 +21,7 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
-
-ul,
-ol {
+ul {
     list-style: none;
 }
 a {
@@ -137,7 +124,7 @@ a {
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
@@ -198,7 +185,7 @@ a {
     outline: 2px solid var(--accent-color);
 }
 
-/* П О Р Т Ф О Л И О */
+/* === П О Р Т Ф О Л И О === */
 .filter-button {
     color: var(--title-text-color);
     background-color: var(--alt-background-color);
@@ -216,6 +203,17 @@ a {
     background-color: var(--accent-color);
 }
 
+.visually-hidden {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
 .project-title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -231,5 +229,5 @@ a {
 }
 .project-item {
     background-color: var(--primary-white-color);
-    border: 1px solid var(--item-boder-color);
+    border: 1px solid var(--item-border-color);
 }
