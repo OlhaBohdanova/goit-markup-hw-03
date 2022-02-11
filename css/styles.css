@@ -61,8 +61,10 @@ img {
 .page-header {
     padding-left: 15px;
     padding-right: 15px;
+
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 16px;
+    line-height: 1.17;
     background-color: var(--primary-white-color);
     border-bottom: 1px solid var(--header-border-color);
 }
