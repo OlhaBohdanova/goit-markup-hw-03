@@ -171,9 +171,14 @@ img {
     height: 600px;
     text-align: center;
 }
+.container.hero-content {
+    margin: 0 auto;
+    width: 696px;
+}
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
+
     color: var(--primary-white-color);
 
     text-align: center;
@@ -204,10 +209,6 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--accent-button-color);
-}
-.hero-content {
-    margin: 0 auto;
-    width: 696px;
 }
 
 /* Основные секции*/
